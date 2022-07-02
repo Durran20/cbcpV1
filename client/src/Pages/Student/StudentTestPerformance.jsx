@@ -27,8 +27,8 @@ const StudentTestPerformance = () => {
                         <div className="row mt-3">
                             <div className="col-md-8 m-auto">
                                 {store.student.allMarks.CycleTest1.length !== 0 ? <>
-                                    <h4>Cycle Test 1</h4>
-                                    <table className="table border">
+                                    <h4>Internal Test 1</h4>
+                                    <table className="table table-striped table-dark">
                                         <thead>
                                             <tr>
                                                 <th scope="col">S.No</th>
@@ -64,8 +64,8 @@ const StudentTestPerformance = () => {
                         <div className="row mt-3">
                             <div className="col-md-8 m-auto">
                                 {store.student.allMarks.CycleTest2.length !== 0 ? <>
-                                    <h4>Cycle Test 2</h4>
-                                    <table className="table">
+                                    <h4>Internal Test 2</h4>
+                                    <table className="table table-striped table-dark">
                                         <thead>
                                             <tr>
                                                 <th scope="col">S.No</th>
@@ -99,8 +99,8 @@ const StudentTestPerformance = () => {
                         <div className="row mt-3">
                             <div className="col-md-8 m-auto">
                                 {store.student.allMarks.Semester.length !== 0 ? <>
-                                    <h4>Semester</h4>
-                                    <table className="table">
+                                    <h4>Internal Test 3</h4>
+                                    <table className="table table-striped table-dark">
                                         <thead>
                                             <tr>
                                                 <th scope="col">S.No</th>

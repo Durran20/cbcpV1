@@ -34,24 +34,17 @@ module.exports = {
             }
             const avatar = gravatar.url(email, { s: '200', r: 'pg', d: 'mm' })
             let departmentHelper;
-            if (department === "C.S.E") {
+            if (department === "Comp") {
                 departmentHelper = "01"
             }
-            else if (department === "E.C.E") {
+            else if (department === "ETC") {
                 departmentHelper = "02"
             }
-            else if (department === "I.T") {
+            else if (department === "IT") {
                 departmentHelper = "03"
             }
-            else if (department === "Mechanical") {
+            else if (department === "Mech") {
                 departmentHelper = "04"
-            }
-            else if (department === "Civil") {
-                departmentHelper = "05"
-
-            }
-            else if (department === "E.E.E") {
-                departmentHelper = "06"
             }
             else {
                 departmentHelper = "00"
@@ -68,8 +61,8 @@ module.exports = {
             else {
                 helper = admins.length.toString()
             }
-            let hashedPassword;
-            hashedPassword = await bcrypt.hash(dob, 10)
+            let hashedPassword = dob;
+            // hashedPassword = await bcrypt.hash(dob, 10)
             var date = new Date();
             const joiningYear = date.getFullYear()
             var components = [
@@ -174,21 +167,17 @@ module.exports = {
             }
             const avatar = gravatar.url(email, { s: '200', r: 'pg', d: 'mm' })
             let departmentHelper;
-            if (department === "C.S.E") {
+            if (department === "Comp") {
                 departmentHelper = "01"
             }
-            else if (department === "E.C.E") {
+            else if (department === "ETC") {
                 departmentHelper = "02"
             }
-            else if (department === "I.T") {
+            else if (department === "IT") {
                 departmentHelper = "03"
             }
-            else if (department === "Mechanical") {
+            else if (department === "Mech") {
                 departmentHelper = "04"
-            }
-            else if (department === "Civil") {
-                departmentHelper = "05"
-
             }
             else {
                 departmentHelper = "06"
@@ -282,20 +271,17 @@ module.exports = {
                 d: 'mm' // Default
             });
             let departmentHelper;
-            if (department === "C.S.E") {
+            if (department === "Comp") {
                 departmentHelper = "01"
             }
-            else if (department === "E.C.E") {
+            else if (department === "ETC") {
                 departmentHelper = "02"
             }
-            else if (department === "I.T") {
+            else if (department === "IT") {
                 departmentHelper = "03"
             }
-            else if (department === "Mechanical") {
+            else if (department === "Mech") {
                 departmentHelper = "04"
-            }
-            else if (department === "Civil") {
-                departmentHelper = "05"
             }
             else {
                 departmentHelper = "06"

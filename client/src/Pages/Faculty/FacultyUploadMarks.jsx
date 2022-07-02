@@ -168,9 +168,9 @@ const FacultyUploadMarks = () => {
 
                                     })} id="examId">
                                     <option>Select</option>
-                                    <option value="CycleTest1">Cycle Test 1</option>
-                                    <option value="CycleTest2">Cylce Test 2</option>
-                                    <option value="Semester">Semester</option>
+                                    <option value="CycleTest1">Internal Test 1</option>
+                                    <option value="CycleTest2">Internal Test 2</option>
+                                    <option value="Semester">Internal Test 3</option>
                                 </select>
                                 {errorHelper.exam && (<div classNameName="invalid-feedback">{errorHelper.exam}</div>)}
                             </div>
@@ -186,7 +186,7 @@ const FacultyUploadMarks = () => {
                                 {errorHelper.totalMarks && (<div classNameName="invalid-feedback">{errorHelper.totalMarks}</div>)}
                             </div>
 
-                            <table className="table">
+                            <table className="table table-striped table-dark">
                                 <thead>
                                     <tr>
                                         <th scope="col">Registration Number</th>
@@ -208,7 +208,7 @@ const FacultyUploadMarks = () => {
                                     }
                                 </tbody>
                             </table>
-                            <button type="submit" className="btn btn-primary ml-1">Submit</button>
+                            <button type="submit" className="btn ml-1" style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem'}}>Submit</button>
                         </form>
                     </div>
                 </div>

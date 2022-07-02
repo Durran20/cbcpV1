@@ -86,7 +86,7 @@ const StudentUpdateProfile = () => {
                                         <label htmlFor="aadharId">Aadhar Card Number</label>
                                         <input onChange={(e) => setAadharCard(e.target.value)} type="number" className="form-control" id="aadharId" />
                                     </div>
-                                    <button type="submit" className="btn btn-primary">Update</button>
+                                    <button type="submit" className="btn btn-primary" style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem'}}>Update</button>
                                 </form>
                             </div>
                         </div>

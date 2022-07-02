@@ -111,7 +111,7 @@ module.exports = {
             });
 
             
-            //Attendence mark karne wale log nahi
+            //Attendence
             for (let i = 0; i < filteredArr.length; i++) {
                 const pre = await Attendence.findOne({ student: filteredArr[i]._id, subject: sub._id })
                 if (!pre) {

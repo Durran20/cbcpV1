@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 import setAuthToken from './redux/utils/setAuthToken'
 import store from './redux/store'
+import './index.css'
 
 import { setFacultyUser, facultyLogout } from './redux/action/facultyAction'
 

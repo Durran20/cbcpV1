@@ -31,7 +31,7 @@ const StudentUpdatePassword = () => {
         <div>
             {store.student.isAuthenticated ? <>
                 <HomeHelper />
-                <div className="container m-5">
+                <div className="container mt-5">
                     <div className="row m-5">
                         <div className="col-md-5 m-auto">
                             <form noValidate onSubmit={formHandler}>
@@ -58,7 +58,7 @@ const StudentUpdatePassword = () => {
                                     })} value={confirmNewPassword} type="password" id="passwordCId" />
                                     {error.confirmNewPassword && (<div className="invalid-feedback">{error.confirmNewPassword}</div>)}
                                 </div>
-                                <button type="submit" class="btn btn-info btn-block ">Update Password</button>
+                                <button type="submit" class="btn btn-info btn-block " style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem'}}>Update Password</button>
                             </form>
                         </div>
                     </div>

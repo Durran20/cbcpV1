@@ -82,7 +82,7 @@ const FacultyUpdateProfile = () => {
                                         }
                                     </div>
                                 </div>
-                                {!isLoading && <button type="submit" className="btn btn-info">Update</button>}
+                                {!isLoading && <button type="submit" className="btn btn-info" style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem'}}>Update</button>}
                             </form>
                         </div>
                     </div>

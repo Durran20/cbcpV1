@@ -19,8 +19,8 @@ const AdminHome = () => {
                         <div className="col-8">
                             <div className="row">
                                 <div className="col-md-5">
-                                    <div className="card" style={{ width: "18rem" }}>
-                                        <img className="card-img-top" src={store.admin.admin.avatar} alt="Card image cap" />
+                                    <div className="card" style={{ width: "18rem", color: 'white', backgroundColor: '#202836' }}>
+                                        <img className="card-img-top" src="./Style/Images/admin_panel_settings_white_24dp.svg" alt="Card image cap" />
                                         <div className="card-body">
                                             <h5 className="card-title">{store.admin.admin.name}</h5>
                                             <h5 className="card-title">{store.admin.admin.registrationNumber}</h5>
@@ -29,7 +29,7 @@ const AdminHome = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-7">
-                                    <table className="table border">
+                                    <table className="table table-striped table-dark">
                                         <tbody>
                                             <tr>
                                                 <td>Name</td>

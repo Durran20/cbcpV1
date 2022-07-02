@@ -19,17 +19,17 @@ const Home = () => {
                         <div className="col-md-8 mt-5">
                             <div className="row">
                                 <div className="col-md-5">
-                                    <div className="card" style={{ width: "18rem" }}>
+                                    <div className="card" style={{ width: "18rem", color: 'white', backgroundColor: '#202836' }}>
                                         <img className="card-img-top" src={store.student.student.student.avatar} alt="Card image cap" />
                                         <div className="card-body">
                                             <h5 className="card-title">{store.student.student.student.name}</h5>
                                             <h5 className="card-title">{store.student.student.student.registrationNumber}</h5>
-                                            <Link to='/student/updateProfile'>UPDATE PROFILE</Link>
+                                            <Link to='/student/updateProfile' style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem', padding: '5px'}}>UPDATE PROFILE</Link>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-7 bg-dark  text-white">
-                                    <table className="table ">
+                                <div className="col-md-7 text-white">
+                                    <table className="table table-striped table-dark">
                                         <tbody className="text-white">
                                             <tr>
                                                 <td>Name</td>

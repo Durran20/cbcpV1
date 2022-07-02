@@ -45,12 +45,10 @@ const AdminGetAllFaculty = () => {
                                             'is-invalid': error.department
                                         })} id="departmentId">
                                         <option>Select</option>
-                                        <option value="E.C.E">E.C.E</option>
-                                        <option value="C.S.E">C.S.E</option>
-                                        <option value="I.T">I.T</option>
-                                        <option value="E.E.E">E.E.E</option>
-                                        <option value="Mechanical">Mechanical</option>
-                                        <option value="Civil">Civil</option>
+                                        <option value="Comp">Comp</option>
+                                        <option value="ETC">ETC</option>
+                                        <option value="IT">IT</option>
+                                        <option value="Mech">Mech</option>
                                     </select>
                                     {error.department && (<div className="invalid-feedback">{error.department}</div>)}
                                 </div>
@@ -77,7 +75,7 @@ const AdminGetAllFaculty = () => {
                                         }
                                     </div>
                                 </div>
-                                {!isLoading && <button type="submit" className="btn btn-info btn-block  ">Search</button>}
+                                {!isLoading && <button type="submit" className="btn btn-info btn-block  " style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem'}}>Search</button>}
                               
                                
                             </form>
@@ -86,7 +84,7 @@ const AdminGetAllFaculty = () => {
                         </div>
                         <div className="col-md-8">
 
-                            {store.admin.allStudent.length !== 0 && <table className="table border">
+                            {store.admin.allStudent.length !== 0 && <table className="table table-striped table-dark">
                                 <thead>
                                     <tr>
                                         <th scope="col">S.No</th>

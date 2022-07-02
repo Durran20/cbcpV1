@@ -21,17 +21,17 @@ const FacultyInterface = () => {
                         <div className="col-md-8">
                             <div className="row">
                                 <div className="col-5">
-                                    <div className="card" style={{ width: "18rem" }}>
+                                    <div className="card" style={{ width: "18rem", color: 'white', backgroundColor: '#202836' }}>
                                         <img className="card-img-top" src={store.faculty.faculty.faculty.avatar} alt="Card image cap" />
                                         <div className="card-body">
                                             <h5 className="card-title">{store.faculty.faculty.faculty.name}</h5>
                                             <h5 className="card-title">{store.faculty.faculty.faculty.registrationNumber}</h5>
-                                            <Link to='/faculty/updateProfile'>UPDATE PROFILE</Link>
+                                            <button onClick={() => {history.push('/faculty/updateProfile')}}  style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem'}} >UPDATE PROFILE</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-7">
-                                    <table className="table border">
+                                    <table className="table table-striped table-dark">
                                         <tbody>
                                             <tr>
                                                 <td>Name</td>

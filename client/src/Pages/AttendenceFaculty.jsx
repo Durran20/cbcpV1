@@ -133,7 +133,7 @@ const AttendenceFaculty = () => {
                                     }
                                 </div>
                             </div>
-                            {!isLoading && <button type="submit" className="btn btn-info  ">Search</button>}
+                            {!isLoading && <button type="submit" className="btn btn-info" style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem'}}>Search</button>}
                         </form>
                     </div>
                 </div>}
@@ -159,8 +159,8 @@ const AttendenceFaculty = () => {
                                         <td><div className="form-check">
                                             <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
                                         </div></td>
-                                        <th scope="col">Registration Number</th>
-                                        <th scope="col">Student Name</th>
+                                        <th scope="col" style={{color: 'white'}}>Registration Number</th>
+                                        <th scope="col" style={{color: 'white'}}>Student Name</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -170,8 +170,8 @@ const AttendenceFaculty = () => {
                                                 <td><div className="form-check">
                                                     <input className="form-check-input" type="checkbox" value={obj._id} onChange={handleInputChange} id="defaultCheck1" />
                                                 </div></td>
-                                                <td key={index}>{obj.registrationNumber}</td>
-                                                <td>{obj.name}</td>
+                                                <td key={index} style={{color: 'white'}}>{obj.registrationNumber}</td>
+                                                <td style={{color: 'white'}}>{obj.name}</td>
                                             </tr>
                                         )
                                     }
@@ -186,7 +186,7 @@ const AttendenceFaculty = () => {
                                     }
                                 </div>
                             </div>
-                            {!isLoading2 && <button type="submit" className="btn btn-info ml-1  ">Submit</button>}
+                            {!isLoading2 && <button type="submit" className="btn btn-info ml-1" style={{listStyle:"None", color: 'white', backgroundColor:'#5596e6', borderRadius:'0.25rem'}}>Submit</button>}
                         </form>
                     </div>
                 </div>
